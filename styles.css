@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0370ff;
+    transition: background-color 0.5s ease;
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #9e9e9e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    width: calc(100% - 40px);
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #eee;
+    text-align: right;
+    font-size: 24px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:active {
+    border-color: #ff9900;
+}
+
+.mode-toggle {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos del pie de página */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+}
+
+/* Ajustes para modo oscuro */
+.dark-mode .calculator {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .keys button {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode .display {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .footer {
+    color: #fff;
+}
